@@ -1,0 +1,433 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+@font-face{
+    font-family: 'my-font';
+    src : url('fonts/IRANSansWeb_Medium.woff2') format('woff2');
+}
+body{
+    direction: rtl;
+    font: 13px/25px 'my-font' , 'myriad pro' , tahoma;
+    background: #fdfdfd;
+}
+a{
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+a:hover{
+	text-decoration: none;
+}
+.web-shadow{
+	box-shadow: 0 5px 20px 7px rgba(0, 0, 0, .08);
+}
+.clear-fix{
+	clear: both;
+}
+.even-child{
+	direction: ltr;
+}
+.navbar{
+	direction: ltr;
+	padding: 0!important;
+}
+.navbar .row{
+	width: 100%;
+}
+.navbar-nav{
+	direction: rtl;
+	margin: 0 auto;
+}
+.navbar-brand img{
+	width: 100%;
+}
+.navbar-brand:hover{
+	color: #4a538e;
+}
+.navbar-toggler{
+	direction: rtl;
+}
+.my-align-self-center{
+	margin: auto;
+}
+.carousel-caption{
+	bottom: 7rem;
+}
+.web-heading h1{
+	font-size: 2.75rem;
+	color: #3f3f3f;
+}
+.web-heading h2{
+	font-size: 2.5rem;
+}
+.web-slider-section .web-heading h2{
+	display: inline;
+	text-align: right;
+	padding: 0.5rem 1rem;
+	font-weight: 400;
+	text-align: right;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #888;
+	background-color: rgba(253,253,253,.8); 
+}
+.web-slider-section .web-heading h2 span{
+	color: #4a538e;
+}
+.web-heading span{
+	color: #4a538e;
+}
+.web-heading h3{
+	font-weight: 700;
+	font-size: 3rem;
+	color: #4a538e;
+	position: relative;
+
+}
+.web-pricing-section .web-heading h3 span , .web-about-section .web-heading h3 span
+ ,.web-gallery-section .web-heading h3 span ,.web-contact-with-our-section .web-heading h3 span{
+	background: #fdfdfd;
+	padding: 1.5rem;
+	padding-left: 1.75rem;
+}
+
+.web-pricing-section .web-heading h3::before , .web-about-section .web-heading h3::before
+ ,.web-gallery-section .web-heading h3::before ,.web-contact-with-our-section .web-heading h3::before{
+	content:"";
+	display: block;
+	width: 100%;	
+	height: 1px;
+	background: #4a538e;
+	position: absolute;	
+	top: 60%; 
+	left: 0;
+	z-index: -2;
+}
+.web-pricing-section .web-heading h3::after , .web-about-section .web-heading h3::after
+ ,.web-gallery-section .web-heading h3::after ,.web-contact-with-our-section .web-heading h3::after{
+	content:"";
+	display: block;
+	width: 100%;	
+	height: 1px;
+	background: #4a538e;
+	position: absolute;	
+	top: 60%; 
+	right: 0;
+	z-index: -2;
+}
+.web-heading p{
+	padding: 5px 15px;
+	text-align: justify;
+	margin: 30px auto;
+	color: #666;
+	font-size: 1.15rem;
+	line-height: 1.75;
+	background-color: rgba(253,253,253,.8);
+}
+.web-header-section{
+	background: rgba(253,253,253,1);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:0;
+}
+.web-header-fixed{
+	position: fixed;
+	z-index: 100;
+	background-color: #fff;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+	-webkit-animation-name: fadeInDown;
+  	animation-name: fadeInDown;
+  	animation-duration: 1s;
+  	animation-fill-mode: backwards;
+}
+.web-header-section ul li{
+	padding: 0 15px;
+}
+.web-header-section ul li a{
+	font-size: 1.1rem;
+	padding: 25px 0;
+	font-weight: 500;
+	color: #888;
+}
+.web-header-section ul li.active a ,.web-header-section ul li a:hover{
+	color: #4a538e;
+	border-bottom: 3px solid #4a538e;
+}
+.navbar .btn{
+	background: #4a538e;
+	border: #4a538e;
+}
+.navbar .btn:hover{
+	border: 1px solid #4a538e;
+	background-color: #4a538e;
+	color: #4a538e;
+}
+.carousel-indicators{
+	position: absolute;
+	bottom: 25px;
+	direction: ltr !important;
+}
+.carousel-indicators li{
+	height: 10px;
+	width: 30px;
+	background: #ffff42;
+	border-radius: 20px;
+	border:0;
+	-webkit-transition: all .2s ease-in-out;file:///C:/Users/s.mousavi/Desktop/unique%20lift/index.html#web-slider-section
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.carousel-indicators li.active{
+	width: 45px;
+	background: #4a538e;
+}
+.carousel-indicators li:hover{
+	background: #4a538e;
+}
+.carousel-item{
+	height: 100vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	background-size: cover;
+}
+.width-back img{
+	width: 100%;
+}
+.web-pricing-section{
+	padding: 150px 0 0;
+	background: url(images/img-pricing-section.png) no-repeat;
+	background-size: contain;
+}
+.pricing-image{
+	margin: 20px;
+	height: 200px;
+	width: auto;
+}
+.web-about-section{
+	padding: 150px 0 50px;
+	background: url(images/img-about-section.png) no-repeat;
+	background-size: contain;
+	color: invert;
+}
+.web-about{
+	background: #4a538e;
+}
+.web-about p{
+	background: #4a538e; 
+}
+.web-about span{
+	color: #aaa;
+}
+.web-about-section .web-shadow{
+	box-shadow: 0 5px 20px 15px rgba(0, 0, 0, .1)
+}
+.web-pricing-section h2{
+	color: #888;
+}
+.web-about-section h1{
+	color: #aaa;
+}
+.web-pricing-section p{
+	color: #444;
+}
+.web-about-section p{
+	color: #ccc;
+}
+.web-gallery-section{
+	width: 100%;
+	padding: 150px 0 0;
+	background: url(images/img-contact-with-our-section.png) no-repeat;
+	background-size: contain;
+}
+.web-gallery-section .row{
+	margin-top: 15px;
+}
+.web-gallery-section img{
+	object-fit: cover;
+}
+.my-container{
+	width: 1050px;
+}
+.map{
+	object-fit: cover;
+}
+iframe{
+	object-fit: cover;
+}
+.web-contact-with-our-section{
+	width: 100%;
+	padding: 150px 0 100px;
+	background: url(images/img-contact-with-our-section.png) no-repeat;
+	background-size: contain;
+}
+.web-contact-with-our-section h3{
+
+	margin-bottom:70px;
+}
+.mt-my{
+	margin-top: 2.5rem !important;
+}
+.my-contact{
+	background: #4a538e;
+}
+.web-contact-with-our-section .social-network{
+	background: #4a538e; 
+	direction: ltr;
+	margin-left: 20px;
+}
+.web-contact-with-our-section .social-network i{
+	display: block;
+}
+.web-contact-with-our-section .social-network a,.web-contact-with-our-section .social-network span{
+	display: block;
+	color: #aaa;
+	font-size: 1.5rem;
+}
+.web-contact-with-our-section .social-network a:hover{
+	color: #eee;
+}
+.web-contact-with-our-section .col-sm-12{
+	padding: 0;
+}
+
+footer{
+	background: #555;
+	padding: 10px 0 8px;
+	width: 100%;
+}
+footer p{
+	margin: 0!important;
+	color: #aaa;
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+footer a{
+	margin-right: 5px;
+	color: #bbb;
+}
+footer a:hover{
+	color: #eee;
+}
+@media screen and (max-width: 992px) {
+	.carousel-indicators{
+		bottom: 76rem;
+	}
+	.width-back img{
+		position: relative;
+		width: 100%;
+	bottom: 145px;
+}
+	.carousel-item{
+	    height : 35vh;
+	}
+	.carousel-caption{
+	    bottom:0;
+	}
+	.web-heading p{
+		direction: rtl;
+		text-align: justify!important;
+	}
+	.navbar-collapse {
+		border-radius: .25rem;
+		z-index: 100;
+	}
+	.my-align-self-center{
+		margin: 20px auto;
+	}
+	.web-header-section ul li {
+		padding: 0 15px;
+	}
+	.web-heading h1 {
+		font-size: 2.5rem;
+	}
+	.web-about-section {
+		padding: 0;
+	}
+	.web-about-section:before {
+		display: none;
+	}
+	.web-pricing-section .nav {
+		margin: 15px 0;
+	}
+	.web-pricing-section .nav li a {
+		padding: 15px;
+	}
+	.web-pricing-section,
+	.web-contact-with-our-section,
+	.web-about-section
+	{
+		padding: 60px 0;
+	}
+	.web-pricing-section .web-pricing-content {
+		padding: 15px;
+	}
+	.map iframe{
+		width: 100% !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	.web-contact-with-our-section .col-sm-12 .map{
+	margin-bottom: 10px;
+}
+    .carousel-item{
+	    height : 30vh;
+	}
+	.width-back img{
+		position: relative;
+		width: 100%;
+	bottom: 265px;
+}
+	.web-pricing-section
+	{
+		padding: 0 0;
+	}
+	.carousel-indicators{
+		bottom: 17.5rem;
+	}
+	.web-slider-section {
+		text-align: center;
+	}
+	.web-slider-section .row {
+		flex-direction: column-reverse;
+	}
+	.web-slider-section .web-heading h1 {
+		margin: 15px 0;
+	}
+	.map iframe{
+		width: 100% !important;
+	}
+}
+@media screen and (max-width: 480px) {
+
+	.width-back img{
+		position:relative;
+		width: 100%;
+	bottom: 345px;
+}
+	.carousel-indicators{
+		bottom: 28rem;
+	}
+	.web-pricing-section .nav li span {
+		font-size: 1.5rem;
+	}
+	.map{
+		width: 100% !important;
+	}
+}
+@media screen and (max-width: 360px) {
+	.width-back img{
+		position:relative;
+	width: 100%;
+	bottom:505px;
+}
+	.web-pricing-section .nav li a {
+		padding: 5px;
+	}
+	.map{
+		width: 100% !important;
+	}
+}
